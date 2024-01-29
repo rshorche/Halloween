@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../assets/images/halloween.jpg") no-repeat;
+  font-family: "Creepster";
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-size: 1.5rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  z-index: 100;
+}
+header h2 {
+  color: #cf6400;
+}
+.nav a {
+  z-index: 10;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2rem;
+  padding: 0.2rem 0.5rem;
+  line-height: 1.4;
+}
+.nav a span {
+  transform: scale(0);
+}
+.nav a:hover span,
+.active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #fff;
+  border-radius: 2rem;
+  z-index: -1;
+  transition: 0.2s;
+  transform: scale(1);
+}
+.nav a:hover,
+a.active {
+  color: #cf6400;
+}
+
+.parallax {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax #text {
+  position: absolute;
+  top: 10%;
+  color: #cf6400;
+  font-size: 5rem;
+  text-shadow: 2px 4px 5px #000;
+  z-index: -1;
+}
+.parallax #bat {
+  position: absolute;
+  bottom: -100%;
+}
+.parallax #tree {
+  position: absolute;
+  left: 0;
+}
+.parallax #gate-left {
+  transform: translateX(-150px);
+}
+.parallax #gate-right {
+  transform: translateX(150px);
+}
+.sec2 {
+  margin-top: 35rem;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.sec2 div {
+  width: 50%;
+}
+.sec2 span {
+  color: #cf6400;
+}
+.sec2 p {
+  font-family: "Lucida Sans";
+}
+.sec2 button {
+  background-color: #cf6400;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.sec3 {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec3 span{
+  color: #cf6400;
+  
+}
+.sec3-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.sec3-box div {
+  width: 30%;
+}
+.sec3-box img {
+  width: 100%;
+  background-size: cover;
+}
+.sec3-box h2 {
+  color: #cf6400;
+}
+.sec3-box p {
+  font-family: "Lucida Sans";
+}
+
+.sec4 {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+.sec4 span {
+  color: #cf6400;
+}
+.sec4-box {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.sec4-box div {
+  width: 400px;
+  display: block;
+}
+.sec4-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.sec4-box h4 {
+  margin: 0.5rem 0;
+  color: #cf6400;
+}
+footer {
+  background: url("/assets/images/footer-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+footer h2 {
+  color: #cf6400;
+}
+footer p {
+  color: #fff;
+}
+.footer-aboute {
+  width: 300px;
+  font-family: "Lucida Sans";
+}
